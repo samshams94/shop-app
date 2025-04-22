@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+   --font-family: Arial, Helvetica, sans-serif;
+   --color-bg: #f5f5dc;
+   --color-bg-light:white;
+   --color-text:#3a5f77; 
+   --color-accent:#7bafda;
+   --spacing-sm: 0.5rem;
+   --spacing-md: 1rem;
+   --spacing-lg:1.5rem;
+   --font-size-sm: 0.875rem;
+   --font-size-base: 1rem;
+   --font-size-lg: 1.25rem;
+   --font-size-xlg: 2rem;
+   --color-border: #d3dce6;
+   --color-bg-hover: darkgray;
+   --color-bg-danger:red;
+   --color-accent-hover:#5c96c9;
+   --color-button-text: #ffffff;
+   
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    background-color: var(--color-bg-light);
+    line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: var(--spacing-sm);
+    font-weight: bold;
+    
+}
+
+p{
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+    font-size:var(--font-size-base);
+}
+.btn{
+    font-family: var(--font-family);
+    border: 2px solid var(--color-border);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--color-bg-light);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: var(--spacing-md);
+    min-width: 100px;
+    display: inline-block;
+}
+.btn:hover{
+    background-color: var(--color-bg-hover)
+}
+.btn-primary {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color-accent-hover);
+  }
+.btn-danger{
+    background-color: white;
+    color: rgb(45, 45, 173);
+}
+.btn-danger:hover{
+  background-color: var(--color-bg-danger)
+}
+.card{
+    padding: var(--spacing-md);
+    border: solid 2px var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--color-bg-light);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.input {
+  width: 100%;
+  padding: var(--spacing-sm);
+  font-size: var(--font-size-md);
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  margin-bottom: var(--spacing-md);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: var(--clr-primary);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--clr-primary-light);
+}
+.animate-pop {
+    animation: popIn 0.4s ease-in-out;
+  }
+@keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,15 @@
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+

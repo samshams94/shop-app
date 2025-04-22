@@ -1,0 +1,29 @@
+
+.product-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+.product-detail img{
+    border-radius: 5px;
+}
+.product-detail p{
+    font-size: var(--font-size-lg);
+}
+.highlight-price{
+    font-weight: bold;
+}
+.cart-navigate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-lg);
+}
+
