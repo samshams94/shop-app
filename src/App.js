@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes,Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,Route} from 'react-router-dom';
 import NavBar from './Components/Navbar';
 import Home from './Pages/Home'
 import Products from './Pages/Products'
@@ -11,6 +11,8 @@ import './Styles/global.css';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import PrivateRoute from './Components/PrivateRoute'
+import NotFound from './Components/NotFound';
+import Footer from './Components/Footer';
 
 function App() {
   
@@ -54,8 +56,10 @@ function App() {
         <Route path='/cart' element={<Cart />}/>
         <Route path='/login' element={<Login/>} />
         <Route path='/register' element={<Register/>} />
+        <Route path='*' element={<NotFound/>} />
 
       </Routes>
+      <Footer  />
 
       
 
@@ -73,6 +77,7 @@ function App() {
 
       </Router>
     </Provider>
+    
        
     </div>
   );
