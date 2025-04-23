@@ -22,8 +22,7 @@ const Register = () => {
 
   const onFormSubmit = (data) => {
     dispatch(registerUser(data));
-    console.log("Registered user:", data);
-    navigate('/login'); // or navigate("/") if you want auto-login experience
+    navigate('/login'); 
   };
 
   return (

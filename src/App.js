@@ -19,11 +19,10 @@ function App() {
   
   const [cart, setCart]= useState([]);
   const [hasMounted,setHasMounted]= useState(false)
-  console.log("Saving to localStorage:", cart, Array.isArray(cart));
+
   useEffect(()=>{
     const parsedCart = JSON.parse(localStorage.getItem("cart"))
     if(Array.isArray(parsedCart)){
-      console.log("Setting cart from storage...");
       setCart(parsedCart)
       setHasMounted(true)
     }
@@ -33,7 +32,6 @@ function App() {
     if(hasMounted== true)
    localStorage.setItem("cart", JSON.stringify(cart))
   },[cart])
-  console.log("Saving cart:", cart);
 
 
  

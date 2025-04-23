@@ -17,7 +17,7 @@ const Login = () => {
     }
   }, [isAuthenticated]);
 
-  const schema = yup.object().shape({
+    const schema = yup.object().shape({
     email: yup.string().email("Enter a valid email").required("Email is required"),
     password: yup.string().required("Password is required"),
   });
@@ -31,7 +31,6 @@ const Login = () => {
   const onFormSubmit = (data) => {
     const { email, password } = data;
     dispatch(loginUser({ email, password }));
-    console.log("Submitted login data:", data);
   };
 
   return (

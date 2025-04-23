@@ -32,6 +32,10 @@
 - **HTML5 + CSS3**
 
 ---
+Live Demo  
+[View Live Site](https://shopswift-app.netlify.app/)
+
+🛍️ ShopSwift – An eCommerce App built with React + Redux
 
 ## 📁 Folder Structure
 
